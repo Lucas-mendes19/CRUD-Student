@@ -1,0 +1,6 @@
+[submodule "nestjs-back-crud-student"]
+	path = nestjs-back-crud-student
+	url = https://github.com/Lucas-mendes19/nestjs-back-crud-student.git
+[submodule "vuejs-front-crud-student"]
+	path = vuejs-front-crud-student
+	url = https://github.com/Lucas-mendes19/vuejs-front-crud-student.git
