@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+  nestjs:
+    container_name: back-end
+    build: ./nestjs-back-crud-student
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+
+  vuejs:
+    container_name: front-end
+    build: ./vuejs-front-crud-student
+    ports:
+      - 8080:8080
+
+  postgres:
+    container_name: postgres
+    image: postgres:alpine
+    environment:
+      POSTGRES_PASSWORD: "docker"
+    ports:
+      - "5432:5432"
